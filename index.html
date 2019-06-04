@@ -15,7 +15,7 @@
     gtag('config', 'UA-20167401-5');
   </script>
 
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png">
@@ -42,6 +42,20 @@
       -moz-user-select: none;
       -ms-user-select: none;
       user-select: none;
+      min-width: 320px;
+    }
+
+    .wrapper {
+      display: table;
+      width: 100%;
+      height: 100%;
+    }
+
+    .container {
+      color: #fff;
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
     }
 
     .title {
@@ -51,12 +65,10 @@
       text-shadow: 0 0 5px #000;
     }
 
-    .container {
-      color: #fff;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+    @media only screen and (max-width: 464px) {
+      .title {
+        font-size: 38px;
+      }
     }
 
     .links {
@@ -76,6 +88,12 @@
       font-size: 18px;
     }
 
+    @media only screen and (max-width: 464px) {
+      .links a {
+        font-size: 15px;
+      }
+    }
+
     .links a:hover {
       border-bottom: 1px solid #fff;
     }
@@ -84,24 +102,32 @@
       width: 26px;
     }
 
+    @media only screen and (max-width: 464px) {
+      .separator {
+        width: 12px;
+      }
+    }
+
   </style>
 </head>
 <body>
-<div class="container">
-  <h1 class="title">GENE KUZOROV</h1>
-  <ul class="links">
-    <li>
-      <a target="_blank" href="//fb.me/kuzorov">FACEBOOK</a>
-    </li>
-    <li class="separator">·</li>
-    <li>
-      <a target="_blank" href="//t.me/kuzorov">TELEGRAM</a>
-    </li>
-    <li class="separator">·</li>
-    <li>
-      <a target="_blank" href="//instagram.com/kuzorov">INSTAGRAM</a>
-    </li>
-  </ul>
+<div class="wrapper">
+  <div class="container">
+    <h1 class="title">GENE KUZOROV</h1>
+    <ul class="links">
+      <li>
+        <a target="_blank" href="//fb.me/kuzorov">FACEBOOK</a>
+      </li>
+      <li class="separator">·</li>
+      <li>
+        <a target="_blank" href="//t.me/kuzorov">TELEGRAM</a>
+      </li>
+      <li class="separator">·</li>
+      <li>
+        <a target="_blank" href="//instagram.com/kuzorov">INSTAGRAM</a>
+      </li>
+    </ul>
+  </div>
 </div>
 </body>
 </html>
